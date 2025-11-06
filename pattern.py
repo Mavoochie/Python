@@ -78,7 +78,7 @@ for i in range(n):
     
 # Reverse Hil Pattern
 n = 5
-print("\nReverse Hil Pattern")
+print("\nReverse Hill Pattern")
 print()
 for i in range(n):
     for j in range(i+1):
@@ -88,5 +88,49 @@ for i in range(n):
         print('*', end=' ')
         
     for j in range(i,n):
+        print('*', end=' ')
+    print()
+
+# Diamond pattern
+
+n = 5
+print("Diamond pattern")
+print()
+for i in range(n-1):
+    
+    for j in range(i,n):
+        print(' ', end=' ')
+    
+    for j in range (i+1):
+        print('*', end=' ')
+        
+    for j in range(i):
+        print('*', end=' ')
+        
+    print()
+    
+for i in range(n):
+    
+    for j in range(i+1):
+        print(' ', end=' ')
+    
+    for j in range(i,n):
+        print('*', end=' ')
+    
+    for j in range(i,n-1):
+        print('*', end=' ')
+        
+    print()
+    
+# Pyramid pattern
+
+n = 5
+print('\nPyramid Pattern')
+print()
+for i in range(n):
+    
+    for j in range (i,n):
+        print(' ', end='')
+    for j in range(i+1):
         print('*', end=' ')
     print()
