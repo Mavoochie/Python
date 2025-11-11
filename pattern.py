@@ -170,4 +170,39 @@ for i in range(n):
     print()
     
 
- 
+#A double hill pattern with a common base
+
+n = 4
+print()
+print('\nA double hill pattern with a common base')
+print()
+
+for i in range(n):
+    for j in range(i,n):
+        print(' ', end='')
+    for j in range(i+1):
+        print('*', end=' ')
+    for j in range(i,n-1):
+        print(' ', end=' ')
+    for j in range(i+1):
+        print('*', end=' ') 
+        
+    print()
+print('* '* 9)
+    
+#An inverted double hill pattern with a common base
+
+n = 4
+print('\nAn inverted double hill pattern with a common base')
+print()
+print('* '*9)
+for i in range(n):
+    for j in range(i+1):
+        print(' ', end='')
+    for j in range(i,n):
+        print('*', end=' ')
+    for j in range(i):
+        print(' ', end=' ')
+    for j in range(i,n):
+        print('*', end=' ')
+    print()
