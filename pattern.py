@@ -5,9 +5,9 @@
 n = 5
 print("\nA square Pattern")
 print()
-for i in range(5):
-    for j in range(5):
-        print("*", end=" ")
+for i in range(n):
+    for j in range(n):
+        print("*", end="  ")
     print()
     
 # Increasing Triangle Pattern
@@ -94,7 +94,7 @@ for i in range(n):
 # Diamond pattern
 
 n = 5
-print("Diamond pattern")
+print("\nDiamond pattern")
 print()
 for i in range(n-1):
     
@@ -134,3 +134,40 @@ for i in range(n):
     for j in range(i+1):
         print('*', end=' ')
     print()
+
+# A double hill pattern
+
+n = 5
+print('\nA double hill pattern')
+print()
+
+for i in range(n):
+    for j in range(i,n):
+        print(' ', end='')
+    for j in range(i+1):
+        print('*', end=' ')
+    for j in range(i,n-1):
+        print(' ', end=' ')
+    for j in range(i+1):
+        print('*', end=' ') 
+        
+    print()
+
+# An inverted double hill pattern
+
+n = 5
+print('\nAn inverted double hill pattern')
+print()
+for i in range(n):
+    for j in range(i+1):
+        print(' ', end='')
+    for j in range(i,n):
+        print('*', end=' ')
+    for j in range(i):
+        print(' ', end=' ')
+    for j in range(i,n):
+        print('*', end=' ')
+    print()
+    
+
+ 
